@@ -16,3 +16,19 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+@import url('./pixabay-api.css');
+@import url('./render-functions.css');
+
+
+.pixabay-api-title {
+  font-weight: 600;
+  font-size: 45px;
+  margin-left: 220px;
+}
+
+.render-functions-title {
+  font-weight: 600;
+  font-size: 45px;
+  margin-left: 150px;
+}
