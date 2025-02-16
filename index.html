@@ -5,21 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goit-js-hw-11</title>
-    <script type="module" crossorigin src="/goit-js-hw-11/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-BVi7BH8B.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-CTAWSR4v.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DkczhqSJ.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CKJ9fq3B.css">
   </head>
   <body>
+    <header>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+      <div id="loader" class="loader"></div>
+    </header>
 
+    <main>
+      <ul class="gallery"></ul>
+    </main>
+
+    <footer>
     <div class="container">
       <h1 class="main-title">
       <span class="main-title-gradient">Gohomework-11</span></h1>
-    <nav>
-      <ul>
-        <li><a href="./pixabay-api.html" class="pixabay-api-title">PIXABAY-API</a></li>
-        <li><a href="./render-functions.html" class="render-functions-title">RENDER-FUNCTIONS</a></li>        
-      </ul>
-    </nav>
     </div>
-
+    </footer>
+        
   </body>
 </html>
