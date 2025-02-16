@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+      <div id="loader" class="loader"></div>
+    </header>
 
+    <main>
+      <ul class="gallery"></ul>
+    </main>
+
+    <footer>
     <div class="container">
       <h1 class="main-title">
       <span class="main-title-gradient">Gohomework-11</span></h1>
-    <nav>
-      <ul>
-        <li><a href="./pixabay-api.html" class="pixabay-api-title">PIXABAY-API</a></li>
-        <li><a href="./render-functions.html" class="render-functions-title">RENDER-FUNCTIONS</a></li>        
-      </ul>
-    </nav>
     </div>
-
+    </footer>
+        
     <script type="module" src="./main.js"></script>
   </body>
 </html>
