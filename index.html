@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goit-js-hw-11</title>
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-CTAWSR4v.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DkczhqSJ.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CKJ9fq3B.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-CSuC_abi.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-6ORJP4K4.css">
   </head>
   <body>
     <header>
       <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search images..." />
+        <label class="firstfield">
+          <input name="search" type="text" id="search-input" placeholder="Search images..." required />
+        </label>
         <button type="submit">Search</button>
       </form>
-      <div id="loader" class="loader"></div>
+      <div id="loading-message" style="display:none;">Loading images, please wait...</div>
     </header>
 
     <main>
@@ -24,11 +26,14 @@
     </main>
 
     <footer>
-    <div class="container">
-      <h1 class="main-title">
-      <span class="main-title-gradient">Gohomework-11</span></h1>
-    </div>
+      <div class="container">
+        <h1 class="main-title">
+          <span class="main-title-gradient">Gohomework-11</span>
+        </h1>
+      </div>
     </footer>
-        
+
   </body>
 </html>
+
+
