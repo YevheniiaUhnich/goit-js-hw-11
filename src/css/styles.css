@@ -120,10 +120,11 @@ button:hover {
 }
 
 .gallery img {
-  width: 200px;
+  width: 250px;
   height: auto;
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .gallery img:hover {
@@ -132,6 +133,11 @@ button:hover {
 
 .gallery-item {
   border: 1px solid #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .image-info {

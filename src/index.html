@@ -10,10 +10,12 @@
   <body>
     <header>
       <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search images..." />
+        <label class="firstfield">
+          <input name="search" type="text" id="search-input" placeholder="Search images..." required />
+        </label>
         <button type="submit">Search</button>
       </form>
-      <div id="loader" class="loader"></div>
+      <div id="loading-message" style="display:none;">Loading images, please wait...</div>
     </header>
 
     <main>
@@ -21,12 +23,15 @@
     </main>
 
     <footer>
-    <div class="container">
-      <h1 class="main-title">
-      <span class="main-title-gradient">Gohomework-11</span></h1>
-    </div>
+      <div class="container">
+        <h1 class="main-title">
+          <span class="main-title-gradient">Gohomework-11</span>
+        </h1>
+      </div>
     </footer>
-        
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
+
+
