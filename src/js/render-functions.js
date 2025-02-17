@@ -1,3 +1,5 @@
+
+
 export function imagesTemplate(arrPict, tagGallery) {
     const gallery = document.querySelector(tagGallery);
     gallery.innerHTML = '';
@@ -21,8 +23,15 @@ export function imagesTemplate(arrPict, tagGallery) {
     const lightbox = new SimpleLightbox(tagGallery + " a", {
       captionsData: 'alt',
       captionDelay: 250,
+      close: true,
     });
     lightbox.refresh();
+
+    gallery.addEventListener('click', (event) => {
+        if (event.target.tagName === 'IMG') {
+          lightbox.close(); 
+        }
+      });
   }
   
 
