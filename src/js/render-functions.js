@@ -1,4 +1,5 @@
-
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export function imagesTemplate(arrPict, tagGallery) {
     const gallery = document.querySelector(tagGallery);
@@ -27,8 +28,8 @@ export function imagesTemplate(arrPict, tagGallery) {
     });
     lightbox.refresh();
 
-    gallery.addEventListener('click', (event) => {
-        if (event.target.tagName === 'IMG') {
+    gallery.addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
           lightbox.close(); 
         }
       });
